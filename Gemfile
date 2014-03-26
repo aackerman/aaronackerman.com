@@ -8,6 +8,7 @@ gem 'uglifier',                   '~> 2.5.0'
 gem 'pg',                         '~> 0.17.1'
 gem 'therubyracer',               '~> 0.12.1'
 gem 'devise',                     '~> 3.2.4'
+gem 'rails-assets-jquery',        '~> 1.11.0'
 gem 'rails-assets-normalize-css', '~> 3.0.0'
 
 group :development do
