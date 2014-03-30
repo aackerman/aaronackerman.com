@@ -2,6 +2,10 @@
 
 $base-black: rgb(51, 51, 51);
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 .main-container {
   color: $base-black;
   width: 66.6666667%;
@@ -19,6 +23,7 @@ $base-black: rgb(51, 51, 51);
 
 .root-link {
   color: inherit;
+  display: inline-block;
   letter-spacing: 1px;
   text-decoration: none;
 
@@ -27,11 +32,16 @@ $base-black: rgb(51, 51, 51);
     weight: bold;
   }
 
-  &:hover {
-    border-bottom: 3px solid;
-    border-color: $base-black;
+  &:hover span {
+    text-decoration: underline;
   }
 }
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
 
 .unstyled-list {
   list-style: none;
