@@ -20,7 +20,15 @@
   "homepage": "https://github.com/aackerman/aaronackerman.com",
   "devDependencies": {
     "gulp": "^3.8.8",
+    "gulp-cache": "^0.2.2",
+    "gulp-concat": "^2.4.1",
+    "gulp-copy": "0.0.2",
     "gulp-react": "^1.0.2",
+    "gulp-regenerator": "^1.1.0",
+    "gulp-rev": "^1.1.0",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-sass": "^0.7.3",
+    "gulp-watch": "^1.0.7",
     "webpack": "^1.4.1-beta1"
   }
 }
