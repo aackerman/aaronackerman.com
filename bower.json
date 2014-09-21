@@ -1,0 +1,12 @@
+{
+  "name": "aaronackerman.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aackerman/aaronackerman.com",
+  "authors": [
+    "Aaron Ackerman <theron17@gmail.com>"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT"
+}
