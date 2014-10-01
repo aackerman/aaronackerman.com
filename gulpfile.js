@@ -7,7 +7,7 @@ var rev         = require('gulp-rev');
 var rimraf      = require('gulp-rimraf');
 
 function ifEnv(env, cb) {
-  if process.env.APP_ENV && process.env.APP_ENV == env {
+  if (process.env.APP_ENV && process.env.APP_ENV == env) {
     cb();
   }
 }
@@ -52,3 +52,5 @@ gulp.task('styles', function(){
 
   task.pipe(gulp.dest('build/styles'));
 });
+
+gulp.task('default', ['build']);
