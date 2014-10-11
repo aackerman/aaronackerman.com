@@ -1,10 +1,10 @@
 var gulp        = require('gulp');
 var react       = require('gulp-react');
-var regenerator = require('gulp-regenerator');
 var sass        = require('gulp-sass');
 var copy        = require('gulp-copy');
 var rev         = require('gulp-rev');
 var rimraf      = require('gulp-rimraf');
+var regenerator = require('gulp-regenerator');
 
 function ifEnv(env, cb) {
   if (process.env.APP_ENV && process.env.APP_ENV == env) {
