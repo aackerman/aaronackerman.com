@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/aackerman/aaronackerman.com",
   "devDependencies": {
+    "6to5": "^1.14.6",
+    "6to5-loader": "^0.2.3",
+    "flux": "^2.0.1",
     "gulp": "^3.8.8",
     "gulp-cache": "^0.2.2",
     "gulp-concat": "^2.4.1",
@@ -29,6 +32,8 @@
     "gulp-rimraf": "^0.1.0",
     "gulp-sass": "^0.7.3",
     "gulp-watch": "^1.0.7",
-    "webpack": "^1.4.1-beta1"
+    "jsx-loader": "^0.12.2",
+    "react": "^0.12.1",
+    "webpack": "^1.4.13"
   }
 }

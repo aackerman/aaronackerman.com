@@ -7,7 +7,7 @@ var rimraf      = require('gulp-rimraf');
 var regenerator = require('gulp-regenerator');
 
 function ifEnv(env, cb) {
-  if (process.env.APP_ENV && process.env.APP_ENV == env) {
+  if (process.env.NODE_ENV && process.env.NODE_ENV == env) {
     cb();
   }
 }
@@ -19,38 +19,19 @@ gulp.task('clean', function(){
       .pipe(rimraf({ force: true }));
 });
 
-gulp.task('scripts', function(){
-  var task = gulp.src('app/scripts/**/*').pipe(react())
-
-  ifEnv('production', function(){
-    task = task.pipe(rev());
-    task = task.pipe(rev.manifest());
-  });
-
-  task.pipe(gulp.dest('build/js'));
-});
-
 gulp.task('images', function(){
-  var task = gulp.src('app/images/**/*')
-
-  ifEnv('production', function(){
-    task = task.pipe(rev())
-    task = task.pipe(rev.manifest())
-  });
-
-  task.pipe(gulp.dest('build/img'));
+  gulp.src('app/images/**/*')
+      .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('styles', function(){
-  var task = gulp.src('app/styles/**/*')
-  task = task.pipe(sass())
+  gulp.src('app/styles/**/*.scss')
+      .pipe(sass())
+      .pipe(gulp.dest('build/'));
+});
 
-  ifEnv('production', function(){
-    task = task.pipe(rev())
-    task = task.pipe(rev.manifest())
-  });
+gulp.task('build:dist', function(){
 
-  task.pipe(gulp.dest('build/styles'));
 });
 
 gulp.task('default', ['build']);
