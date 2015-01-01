@@ -38,6 +38,12 @@ _.isNaN([]);    // false
 
 As written above `NaN` values are number values so `_.isNumber(NaN)` correctly returns `true` for both [`Underscore`](http://underscorejs.org/) and [`Lo-Dash`](https://lodash.com/). Both libraries have had issues filed for incorrect behavior, but the behavior is correct and the answer is usually to point consumers to the `_.isFinite` method.
 
+Issues also arise when dealing with builtin methods such as `Array.prototype.indexOf`. `NaN` values are unable to be found without special handling.
+
+{% highlight javascript %}
+[0,1,NaN,3].indexOf(NaN); // -1
+{% endhighlight %}
+
 The [ES6 draft](https://people.mozilla.org/~jorendorff/es6-draft.html) specifies a solution to the global `isNaN` method with a new `Number.isNaN` method. `Number.isNaN` returns the same results [`Underscore`](http://underscorejs.org/) and [`Lo-Dash`](https://lodash.com/) return.
 
 {% highlight javascript %}
@@ -50,7 +56,16 @@ Number.isNaN('1');   // false
 Number.isNaN([]);    // false
 {% endhighlight %}
 
-At the time, my co-worker called 'wat' on JavaScript. I took it upon myself to set the record straight, but realized everyone who encounters `Nan` values must learn about these problems. It's important to understand this behavior is **not** specific to JavaScript.
+The [ES6 draft](https://people.mozilla.org/~jorendorff/es6-draft.html) also specifies `Object.is`, offering a better way to determine if two values are equal over the strict equality operator, triple equals. `Object.is` works as the strict equality operator with two exceptions: `NaN` values, and positive and negative zero.
+
+{% highlight javascript %}
+Object.is(NaN, NaN); // true
+Object.is(-0, +0);   // false
+NaN === NaN;         // false
+-0 === +0;           // true
+{% endhighlight %}
+
+When my co-worker was having issues and asking question about `NaN` values he called 'wat' on JavaScript. I took it upon myself to set the record straight, but realized everyone who encounters `NaN` values must learn about these problems, hence this post. It's important to understand this behavior is **not** specific to JavaScript. It is specific to all languages that use [IEEE 754 Floating-Point](http://en.wikipedia.org/wiki/IEEE_floating_point) number calculations.
 
 Ruby has the following behavior with regards to `NaN` values.
 
@@ -71,4 +86,4 @@ System.out.println(x != x); // true
 System.out.println(x == x); // false
 {% endhighlight %}
 
-The behavior across Ruby, Java, and JavaScript is essentially the same. All three of these languages use [IEEE 754 Floating-Point](http://en.wikipedia.org/wiki/IEEE_floating_point) number values. Every single consumer of these languages must eventually learn the rules of `NaN` values. I hope consumers of these languages are able to understand the issues at hand and deal with them thoughtfully instead of being perplexed by cognitive dissonance.
+The behavior across Ruby, Java, and JavaScript is essentially the same. Every single consumer of these languages must eventually learn the rules of `NaN` values. I hope consumers of these languages are able to understand the issues at hand and deal with them thoughtfully.
