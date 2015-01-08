@@ -127,6 +127,7 @@
 * Making screencasts instead of blog posts
 * Creating a gif from a video, and deciding to use video when the gif is too big
 * Snark and jokes can influence the entire team
+* Code ownership, view hierarchy, which parts are aware of other parts, delegation to other classes
 * The bare bones basics of JavaScript
 * The browser, the most unstable environment imaginable
   * Shipping code that needs to work on M versions of N platforms

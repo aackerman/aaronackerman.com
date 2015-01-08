@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Understanding NaN Values
+categories: []
+tags: []
+published: True
+
 ---
 
-A co-worker recently had issues with `NaN` values in JavaScript. `NaN` values are [IEEE 754 Floating-Point](http://en.wikipedia.org/wiki/IEEE_floating_point) number values. These values result from an undefined or unrepresentable value in floating point calculations. `NaN` values **are** number values despite everything your brain might tell you when you read `NaN` as 'Not a Number'. A lot of values in programming are not a number. In the case of `NaN` values it's useful to forget all logic and intuition, and memorize the facts.
+A co-worker recently had issues with `NaN` values in JavaScript. `NaN` values are [IEEE 754 Floating-Point](http://en.wikipedia.org/wiki/IEEE_floating_point) number values. These values result from an undefined or unrepresentable value in floating point calculations. `NaN` values **are** number values despite everything your brain might tell you when you read `NaN` as 'Not a Number'. In the case of `NaN` values it's useful to forget all logic and intuition, and memorize the facts.
 
 JavaScript reports `NaN` values as number types, this is correct per the ECMA-262 and IEEE 754 specs.
 
@@ -12,7 +16,7 @@ typeof NaN; // 'number'
 Object.prototype.toString.call(NaN); // '[object Number]'
 {% endhighlight %}
 
-In JavaScript a `NaN` value is the only value that is not reflexive. That's one way to identify a `NaN` value. `x !== x` where `x` is a `NaN` value will evaluate to `true`. The global `isNaN` method can be used to identify `NaN` values. However, the `isNaN` method doesn't handle converting input to a number. It has its own set of gotchas.
+In JavaScript a `NaN` value is the only type of value that is not reflexive. That's one way to identify a `NaN` value. `x !== x` where `x` is a `NaN` value will evaluate to `true`. The global `isNaN` method can be used to identify `NaN` values. However, the `isNaN` method doesn't handle converting input to a number. It has a set of gotchas.
 
 {% highlight javascript %}
 isNaN(NaN);   // true
@@ -86,4 +90,4 @@ System.out.println(x != x); // true
 System.out.println(x == x); // false
 {% endhighlight %}
 
-The behavior across Ruby, Java, and JavaScript is essentially the same. Every single consumer of these languages must eventually learn the rules of `NaN` values. I hope consumers of these languages are able to understand the issues at hand and deal with them thoughtfully.
+The behavior across Ruby, Java, and JavaScript is essentially the same. Every single consumer of these languages must eventually learn the rules of `NaN` values. I hope consumers of these languages are now able to understand the issues at hand and deal with them thoughtfully.
