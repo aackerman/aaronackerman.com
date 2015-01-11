@@ -3,10 +3,12 @@
 1. Why people like Angular
 * Why I like React
 * An introduction to version control systems (git, hg, svn, etc.)
-* Teaching and learning with pull requests
-  * Fixing the "Made changes based on PR feedback" problem
 * Understanding pass-by-value vs pass-by-reference
 * Using webpack, why webpack is awesome
+* Coercion in JavaScript
+  * if statements
+  * +, -, ! operators
+* typeof operator, type identification, constructor identification
 * Mentoring and pairing
 * Why Flux works better than browser MVC
   * The importance of client side data stores
@@ -19,9 +21,6 @@
   * $('body').on('...', function(){})
   * Imperative DOM manipulation
   * Mixins, Inheritance and hidden implementations
-* Constructive code review
-* Reviewing your own code before making a PR
-* Get idea accepted before code, start PR immediately
 * Code smaller, test smaller, incremental changes, feature flags
 * Writing software and having hobbies (have multiple interests, video games, sports, guitar, exercising, be interesting)
 * The process of renaming a column in Rails with zero downtime
@@ -110,8 +109,8 @@
 * Pairing on software, pairing with new developers
   * Be the pairing person, don't go off the rails, always understand the goal of the work
 * Keep meetings short, keep standups short
-* Have 1 hour status meetings at the end of the week to compile real team changes
-* Have 1 hour retrospective meetings at the end of a sprint to talk about what went well, what went poorly, what can be changed so things don't go poorly
+* 1 hour status meetings, engineering team only, at the end of the week to compile real team changes
+* 1 hour retrospective meetings, engineering team only, at the end of a sprint to talk about what went well, what went poorly, what can be changed so things don't go poorly
 * Pay attention to how you feel about your job, if things continue to be bad and make you unhappy it's time to leave
 * Polyglot programming, multiple languages, Interprocess communication
 * Setting up a VPS with digitalocean
