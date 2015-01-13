@@ -3,12 +3,15 @@
 1. Why people like Angular
 * Why I like React
 * An introduction to version control systems (git, hg, svn, etc.)
-* Understanding pass-by-value vs pass-by-reference
+* Understanding pass-by-value vs pass-by-reference, pointers, reference operators, dereferencing in statically typed languages
 * Using webpack, why webpack is awesome
 * Coercion in JavaScript
   * if statements
   * +, -, ! operators
-* typeof operator, type identification, constructor identification
+  * Constructors
+* typeof operator, type identification, constructor identification, Constructors vs primitives and object equality 'ham' vs new String('ham')
+* Prototype chain, vs extension
+* Values on the prototype chain are a bad idea
 * Mentoring and pairing
 * Why Flux works better than browser MVC
   * The importance of client side data stores
