@@ -118,7 +118,7 @@
 * Polyglot programming, multiple languages, Interprocess communication
 * Setting up a VPS with digitalocean
 * Understanding the benefits of using containers
-* Home automation, and using the internet of things
+* Home automation, and IoT
 * Podcasts worth listening to (RubyRogues, JavaScript Jabber)
 * Attending conferences, the software mini-vacation
 * Attending meetups, talking to people in the community
@@ -130,9 +130,6 @@
 * Creating a gif from a video, and deciding to use video when the gif is too big
 * Snark and jokes can influence the entire team
 * Code ownership, view hierarchy, which parts are aware of other parts, delegation to other classes
-* The bare bones basics of JavaScript
 * The browser, the most unstable environment imaginable
   * Shipping code that needs to work on M versions of N platforms
 * Ten-thousand hour rule
-* As a software developer, what to talk about at family gatherings
-* Teaching JavaScript to Java developers
