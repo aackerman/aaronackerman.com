@@ -17,7 +17,7 @@ If I understand the implementation but I have an idea for how it could be expres
 
 If indentation is off, I assume the author didn't see the mistake, and comment where the fix should be made. I like to ask a question like "Would you mind changing the formatting to something like this?" and follow up with a suggested implementation. If three or four lines are hard to read due to formatting or a line is too long, responding with the exact suggested fix is much better than responding with "Fix formatting here."
 
-I always hope that I don't have to make nitpicking comments about formatting. I make a habit of reviewing diffs before committing, and checking if there are any obvious formatting mistakes. When I create a pull request I self-review all of the changes, and hope I can fix them before another person reviews, comments, and my inbox is flooded. No reason to waste another person's time if reviewing the changes myself will save all reviewers some time.
+I always hope that I don't have to make nitpicking comments about formatting. I make a habit of reviewing diffs before committing, and checking if there are any obvious formatting mistakes. When I create a pull request I self-review all of the changes, and hope I can fix them before another person reviews, comments, and my inbox is flooded. The self-review is important to me because I will make changes over the course of several commits and all of the commits together may not be cohesive.
 
 ## The learning part
 
