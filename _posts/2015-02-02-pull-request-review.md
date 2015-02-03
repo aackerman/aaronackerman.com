@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It's dangerous to go alone!
+title: Pull Request Review
 categories: []
 tags: []
 published: True
@@ -29,12 +29,15 @@ When reviewing pull requests, sometimes I will see this commit message, "Made ch
 
 ## Humility
 
-Code review is about technical feedback and constructive criticism. It *should not* be personal, hopefully it's not about style.
+Code review is about technical feedback and constructive criticism, does it work, can you understand it today, will the changes be easy to understand tomorrow.
 
 ## Things to avoid in pull requests
 
+These are simply my personal preferences, I like to stick to taking care of business.
+
 * +1's
 * Joke responses to feedback
+* Joke comments on changes
 * Ignoring feedback
 * Ignoring tests
 * Destructive criticism
