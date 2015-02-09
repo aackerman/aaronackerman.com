@@ -18,9 +18,10 @@ Excluding JSX, which is optional, there is zero special syntax for React. Every 
 Early warnings are a pretty big deal when it comes to React.
 
 The flexibility of React is understated. The interoperability with existing tools is extremely important.
-  * [jQuery UI interop](https://github.com/ryanflorence/reactconf-2015-HYPE/blob/master/demos/04-dom-lib-interop/app.js)
-  * [React views powering Ember components](https://gist.github.com/ryanflorence/3c4597c1e95b3fd3c9e1)
-  * [Using React views to replace Backbone.View](http://www.thomasboyt.com/2013/12/17/using-reactjs-as-a-backbone-view.html)
+
+  * [React with jQuery UI](https://github.com/ryanflorence/reactconf-2015-HYPE/blob/master/demos/04-dom-lib-interop/app.js)
+  * [React with Ember](https://gist.github.com/ryanflorence/3c4597c1e95b3fd3c9e1)
+  * [React with Backbone](http://www.thomasboyt.com/2013/12/17/using-reactjs-as-a-backbone-view.html)
   * [React with D3](http://nicolashery.com/integrating-d3js-visualizations-in-a-react-app/)
   * [React with Angular](https://github.com/davidchang/ngReact)
   * [React with three.js](https://github.com/Izzimach/react-three)
