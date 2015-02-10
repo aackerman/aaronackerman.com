@@ -9,15 +9,17 @@ The Virtual DOM is an implementation detail, it allows React to re-render quickl
 
 Server-side rendering is a feature of React. But server-side and client-side rendering is an extremely tough problem space. React makes it somewhat easier, 'more possible', but it's still extremely tough. And Ember will have server-side rendering as a feature soon as well.
 
+React feels like server-side rendering. Request data, show data. It's a very simple model to reason about, ignore the state of the DOM, keep the state in JavaScript and let React sort everything out.
+
 JSX is simple sugar to allow consumers to write code that looks more like HTML than the nested function calls that are output by the compiler.
 
 The API surface area of React is small, in comparison to other libraries it can take much less time to be effective using React. This is a really big deal.
 
-Excluding JSX, which is optional, there is zero special syntax for React. Every `<div>` is transformed into `React.createElement('div')`.
+Excluding JSX syntax, which is optional, there is zero special syntax for React. Every `<div>` is transformed into `React.createElement('div')`.
 
-Early warnings are a pretty big deal when it comes to React.
+Early warnings are a pretty big deal when it comes to React. When I use `class=` on a React component, console warning messages will be logged asking me if I really meant `className=`, and it's right, I did mean `className`. [`react-a11y`](https://github.com/rackt/react-a11y) from [@ryanflorence](https://twitter.com/ryanflorence) provides message in the same vein as the main React library offering details about accessibility problems with returned spec for the DOM.
 
-The flexibility of React is understated. The interoperability with existing tools is extremely important.
+The flexibility of React is understated. The interoperability with existing tools is extremely important. React can work with any major library out there, for better or for worse.
 
   * [React with jQuery UI](https://github.com/ryanflorence/reactconf-2015-HYPE/blob/master/demos/04-dom-lib-interop/app.js)
   * [React with Ember](https://gist.github.com/ryanflorence/3c4597c1e95b3fd3c9e1)

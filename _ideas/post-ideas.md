@@ -132,4 +132,4 @@
 * Code ownership, view hierarchy, which parts are aware of other parts, delegation to other classes
 * The browser, the most unstable environment imaginable
   * Shipping code that needs to work on M versions of N platforms
-* Ten-thousand hour rule
+* Using react-router
