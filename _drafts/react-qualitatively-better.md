@@ -7,7 +7,7 @@ React is a pretty great library, it's not a full framework, but it's an extremel
 
 The Virtual DOM is an implementation detail, it allows React to re-render quickly, but this initially differentiating feature may turn into a checkmark if all frameworks and view layer libraries implement updates in this fashion. It doesn't make React special.
 
-Server-side rendering is a feature of React. But server-side and client-side rendering is an extremely tough problem space. React makes it somewhat easier, 'more possible', but it's still extremely tough. And Ember will have server-side rendering as a feature soon as well.
+Server-side rendering is a feature of React. But server-side and client-side rendering is an extremely tough problem space. React makes it somewhat easier, 'more possible', but it's still extremely tough. And Ember will have server-side rendering as a feature soon as well. Also not a differentiating feature for React.
 
 React feels like server-side rendering. Request data, show data. It's a very simple model to reason about, ignore the state of the DOM, keep the state in JavaScript and let React sort everything out.
 
@@ -17,7 +17,7 @@ The API surface area of React is small, in comparison to other libraries it can 
 
 Excluding JSX syntax, which is optional, there is zero special syntax for React. Every `<div>` is transformed into `React.createElement('div')`.
 
-Early warnings are a pretty big deal when it comes to React. When I use `class=` on a React component, console warning messages will be logged asking me if I really meant `className=`, and it's right, I did mean `className`. [`react-a11y`](https://github.com/rackt/react-a11y) from [@ryanflorence](https://twitter.com/ryanflorence) provides message in the same vein as the main React library offering details about accessibility problems with returned spec for the DOM.
+Early warnings are a pretty big deal when it comes to React. When I use `class=` on a React component, console warning messages will be logged asking me if I really meant `className=`, and it's right, I did mean `className`. [`react-a11y`](https://github.com/rackt/react-a11y) from [@ryanflorence](https://twitter.com/ryanflorence) provides messages in the same vein as the main React library offering details about accessibility problems with returned spec for the DOM.
 
 The flexibility of React is understated. The interoperability with existing tools is extremely important. React can work with any major library out there, for better or for worse.
 
@@ -27,3 +27,6 @@ The flexibility of React is understated. The interoperability with existing tool
   * [React with D3](http://nicolashery.com/integrating-d3js-visualizations-in-a-react-app/)
   * [React with Angular](https://github.com/davidchang/ngReact)
   * [React with three.js](https://github.com/Izzimach/react-three)
+  * [React with Canvas](http://engineering.flipboard.com/2015/02/mobile-web/)
+  * [React with Native 1](https://www.youtube.com/watch?v=KVZ-P-ZI6W4)
+  * [React with Native 2](https://www.youtube.com/watch?v=7rDsRXj9-cU)
