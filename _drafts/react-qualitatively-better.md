@@ -3,11 +3,9 @@ layout: post
 title: React.js, Qualitatively Better
 ---
 
-React is a pretty great library, it's not a full framework, but it's an extremely coherent view layer for a web application. When React Native is open sourced, it can provide a great view layer for native applications. React has a lot of qualities that make it great. But, many of React's great qualities cannot be understood objectively.
+React is a pretty great library, it's not a full framework, but it's an extremely coherent view layer for a web application. When React Native is open sourced, it can provide a great view layer for native applications. React has a lot of qualities that make it great.
 
-The Virtual DOM is an implementation detail, it allows React to re-render quickly, but this initially differentiating feature may turn into a checkmark if all frameworks and view layer libraries implement updates in this fashion. It doesn't make React special.
-
-Server-side rendering is a feature of React. But server-side and client-side rendering is an extremely tough problem space. React makes it somewhat easier, 'more possible', but it's still extremely tough. And Ember will have server-side rendering as a feature soon as well. Also not a differentiating feature for React.
+The Virtual DOM is an implementation detail, it allows React to re-render quickly, but this initially differentiating feature may turn into a checkmark if all frameworks and view layer libraries implement updates in this fashion. It doesn't make React special in terms of the DOM. But in terms of providing an abstraction for rendering, the Virtual DOM is huge, React Native and using React to render into HTML5 canvas prove this completely.
 
 React feels like server-side rendering. Request data, show data. It's a very simple model to reason about, ignore the state of the DOM, keep the state in JavaScript and let React sort everything out.
 
