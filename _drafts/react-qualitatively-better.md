@@ -9,11 +9,9 @@ The Virtual DOM is an implementation detail, it allows React to re-render quickl
 
 React feels like server-side rendering. Request data, show data. It's a very simple model to reason about, ignore the state of the DOM, keep the state in JavaScript and let React sort everything out. This also allows a separation between direct parent child components where the parent will handle all data setup and the child simply renders the data.
 
-JSX is simple sugar to allow consumers to write code that looks more like HTML than the nested function calls that are output by the compiler.
-
 The API surface area of React is small, in comparison to other libraries it can take much less time to be effective using React. This is a really big deal. The surface area of other well-known JavaScript frameworks is often much larger than React.
 
-Excluding JSX syntax, which is optional, there is zero special syntax for React. Every `<div>` is transformed into `React.createElement('div')`.
+JSX is simple sugar to allow consumers to write code that looks more like HTML than the nested function calls that are output by the compiler. Excluding JSX syntax, which is optional, there is zero special syntax for React. Every `<div>` is transformed into `React.createElement('div')`. Functional composability is huge in React, refactoring a component into multiple components is usually very straight forward, function extraction.
 
 Early warnings are a pretty big deal when it comes to React. When I use `class=` on a React component, console warning messages will be logged asking me if I really meant `className=`, and it's right, I did mean `className`. [`react-a11y`](https://github.com/rackt/react-a11y) from [@ryanflorence](https://twitter.com/ryanflorence) provides messages in the same vein as the main React library offering details about accessibility problems with returned spec for the DOM.
 
