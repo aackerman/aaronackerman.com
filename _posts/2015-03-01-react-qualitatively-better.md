@@ -35,4 +35,4 @@ The flexibility of React is understated or not well understood without a good fa
 
 The benefits of React are great, it has it's downsides as many frameworks do. Performance for initial render will never be as good as hand writing DOM manipulation.
 
-React is greater than the sum of it's parts. It pushes helps to guide you into the pit of success.
+React is greater than the sum of it's parts. It helps to guide you into the pit of success.
