@@ -11,4 +11,4 @@ It is easier than it seems to get a desktop application started with `atom-shell
 
 [Node-webkit](https://github.com/nwjs/nw.js/tree/master) recently renamed to NW.js is available as well. `atom-shell` stood out to me at the easiest project to start with. I was running the quick start "hello world" within 5 minutes.
 
-All of these are great projects, any one could knock your app's requirements right out of the park. Your requirements drive the choice.
+All of these are great projects, any one of these frameworks could knock your app's requirements right out of the park. Your requirements drive the choice.
