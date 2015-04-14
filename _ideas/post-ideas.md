@@ -111,25 +111,15 @@
 * Less hate, snark, rude jokes, don't be mean
 * Pairing on software, pairing with new developers
   * Be the pairing person, don't go off the rails, always understand the goal of the work
-* Keep meetings short, keep standups short
 * 1 hour status meetings, engineering team only, at the end of the week to compile real team changes
 * 1 hour retrospective meetings, engineering team only, at the end of a sprint to talk about what went well, what went poorly, what can be changed so things don't go poorly
 * Pay attention to how you feel about your job, if things continue to be bad and make you unhappy it's time to leave
 * Polyglot programming, multiple languages, Interprocess communication
-* Setting up a VPS with digitalocean
-* Understanding the benefits of using containers
-* Home automation, and IoT
 * Podcasts worth listening to (RubyRogues, JavaScript Jabber)
-* Attending conferences, the software mini-vacation
 * Attending meetups, talking to people in the community
 * Giving talks at work, making screencasts and providing a link to your co-workers
 * Work at work, do what you want at home
-* Don't have a new years resolution, have a new years change of life
-* Watching videos online after the conference happens, usually free
 * Making screencasts instead of blog posts
-* Creating a gif from a video, and deciding to use video when the gif is too big
 * Snark and jokes can influence the entire team
 * Code ownership, view hierarchy, which parts are aware of other parts, delegation to other classes
-* The browser, the most unstable environment imaginable
-  * Shipping code that needs to work on M versions of N platforms
 * Using react-router
