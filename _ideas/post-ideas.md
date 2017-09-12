@@ -13,21 +13,9 @@
 * Prototype chain, vs extension
 * Values on the prototype chain are a bad idea
 * Mentoring and pairing
-* Why Flux works better than browser MVC
-  * The importance of client side data stores
-  * The importance of reproducing state
-  * Use JS objects to hold state instead of the DOM
-  * Use the DOM as write-only aside from forms
-* Error handling in flux
 * Introverted and going to conferences
-* Legacy projects, using the DOM as a event system
-  * $('body').on('...', function(){})
-  * Imperative DOM manipulation
-  * Mixins, Inheritance and hidden implementations
 * Code smaller, test smaller, incremental changes, feature flags
-* Writing software and having hobbies (have multiple interests, video games, sports, guitar, exercising, be interesting)
 * The process of renaming a column in Rails with zero downtime
-* The troll and the impending flamewar "What kind of editors do you guys like to use?"
 * Setting up a development environment from Zero
 * Saving your development environment with Git
 * Local development with docker
