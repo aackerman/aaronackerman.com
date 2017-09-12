@@ -12,7 +12,7 @@ However, if there are multiple ways to sign up that duplication check has to be 
 
 It could be the case that the form was improperly implemented and allows the user to click sign up multiple times while the user is being signed up. In this case there could be multiple requests in-flight at the same time. Each request to the API could check whether the email for the user is unique, and each one receives the same answer, that the email doesn't exist yet. At this point each request moves along with creating the user and now multiple copies of the same user exist in the database 😱.
 
-The interviewee wasn't aware of unique database constraints in SQL database. Adding a unique constraint to the column containing the users email will ensure that only unique emails can signup, it would also be prudent to store all of the emails in lowercase characters.
+The interviewee wasn't aware of unique database constraints in SQL databases. Adding a unique constraint to the column containing the users email will ensure that only unique emails can signup, it would also be prudent to store all of the emails in lowercase characters.
 
 These are subtle software problems, that assuredly exist in many different APIs.
 
